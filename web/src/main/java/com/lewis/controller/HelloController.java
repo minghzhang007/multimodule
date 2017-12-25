@@ -1,5 +1,6 @@
 package com.lewis.controller;
 
+import com.lewis.domain.entity.PayCost;
 import com.lewis.domain.entity.UserInfo;
 import com.lewis.hello.HelloService;
 import com.lewis.user.UserService;
@@ -33,5 +34,10 @@ public class HelloController {
     public List<UserInfo> userList(){
         List<UserInfo> list = userService.list();
         return list;
+    }
+
+    @GetMapping("/payCosts")
+    public List<PayCost> payCosts(){
+        return userService.payCosts();
     }
 }

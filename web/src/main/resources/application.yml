@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    local:
+      url: jdbc:mysql://127.0.0.1:3306/snail_reader?useUnicode=yes&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
